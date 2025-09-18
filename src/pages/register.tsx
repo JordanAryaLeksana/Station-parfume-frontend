@@ -1,11 +1,11 @@
 import { RegisterData } from "@/Interface/IAuth"
 import { z } from "zod"
-import { Form, useForm } from "react-hook-form"
+import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { AuthAtom } from "@/store/auth"
 import { useAtom } from "jotai"
 import { useRouter } from "next/router"
-import { FormControl, FormLabel, FormMessage, FormField, FormItem } from "@/components/ui/form"
+import {Form,  FormControl, FormLabel, FormMessage, FormField, FormItem } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
@@ -45,7 +45,7 @@ export default function RegisterPage() {
     }
 
     return (
-        <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-geist-sans">
+        <div className="min-h-screen flex flex-col justify-center items-center gap-8 p-4">
             <section className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
                 <h1 className="text-3xl font-bold">Register Page</h1>
                 <p className="text-lg">This is the registration page.</p>
@@ -68,6 +68,7 @@ export default function RegisterPage() {
                                             transition={{ duration: 0.2 }}
                                         >
                                             <Input
+
                                                 {...field}
                                                 placeholder="Your name"
                                                 className="border-yellow-200 focus:border-yellow-400 focus:ring-yellow-400/20 transition-all duration-200"
@@ -78,8 +79,6 @@ export default function RegisterPage() {
                                 </FormItem>
                             )}
                         />
-
-
                         {/* Email */}
                         <FormField
                             control={methods.control}

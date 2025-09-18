@@ -9,7 +9,8 @@ const config: Config = {
     "./src/**/*.{js, jsx, ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {  
+    },
   },
   plugins: [
   ],
