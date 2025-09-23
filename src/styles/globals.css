@@ -2,9 +2,6 @@
 @import "tw-animate-css";
 
 
-
-@import "tailwindcss";
-
 @theme {
   --color-primary-light: #FFDDE5;
   --color-primary-light-hover: #FFC8D6;
@@ -95,7 +92,7 @@
 /* Styling khusus input placeholder */
 input::placeholder {
   font-family: 'Montserrat', sans-serif; /* font placeholder */
-  font-size: 14px; /* bisa sesuaikan */
+  font-size: 18px; 
   font-weight: 400; /* regular */
   color: var(--color-neutral-500); /* sesuai theme kamu */
   opacity: 1; /* biar gak transparan default */

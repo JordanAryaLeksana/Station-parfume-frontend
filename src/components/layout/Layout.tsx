@@ -22,16 +22,17 @@ export default function Layout({
         <div className={` min-h-screen`}>
             {withHeader && <Header />}
             {withNavbar && <Navbar />}
-            <main className=" flex flex-row-reverse ">
-                <div className="flex flex-col flex-grow border-l-[1px] border-secondary-dark">
-                    {children}
-                </div>
-                <div className="flex-grow p-3" >
-                    {withMenu &&
+            <section className={`flex flex-row w-full overflow-x-hidden ${withMenu ? 'mx-30' : ''}`}>
+                {
+                    withMenu &&
+                    <div className="w-[30%]  border-r-[1px] border-secondary-dark p-3" >
                         <Menu />
-                    }
-                </div>
-            </main>
+                    </div>
+                }
+                <main className="">
+                    {children}
+                </main>
+            </section>
             {withFooter && <Footer />}
         </div>
     );

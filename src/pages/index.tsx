@@ -7,7 +7,7 @@ import Typography from "@/components/Typography/Typography";
 export default function Home() {
   return (
     <Layout withFooter withHeader withNavbar withMenu>
-      <div className="flex flex-col items-center justify-center min-h-screen py-2">
+      <div className="flex flex-col items-center justify-center min-h-screen py-2 mx-10">
         <Typography as="h1" variant="Header" size="7xl" className="mb-4">
           Welcome to Station Parfume
         </Typography>
