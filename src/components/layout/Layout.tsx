@@ -22,7 +22,7 @@ export default function Layout({
         <div className={` min-h-screen`}>
             {withHeader && <Header />}
             {withNavbar && <Navbar />}
-            <section className={`flex flex-row w-full overflow-x-hidden ${withMenu ? 'mx-30' : ''}`}>
+            <section className={`${withMenu ? 'flex flex-row w-full overflow-x-hidden mx-30' : ''}`}>
                 {
                     withMenu &&
                     <div className="w-[30%]  border-r-[1px] border-secondary-dark p-3" >

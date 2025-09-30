@@ -18,6 +18,7 @@ const links = [
 	{ name: "Home", href: "/" },
 	{ name: "About", href: "/about" },
 	{ name: "Contact", href: "/contact" },
+	{ name: "Shop", href: "/shop" },
 ];
  const authLinks = [
     { name: "Login", path: "/login", icon: <BiLogIn /> },
