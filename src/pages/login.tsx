@@ -141,7 +141,7 @@ export default function LoginPage() {
                                     variant="outline"
                                     className="w-full border-secondary-darktext-secondary-darker text-secondary-darker hover:bg-secondary-darktext-secondary-darkerhover:border-secondary-darktext-secondary-darker font-medium py-3 transition-all duration-200"
                                     onClick={async () => {
-
+                                        
                                     }}
                                     type="button"
                                 >

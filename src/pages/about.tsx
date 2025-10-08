@@ -4,7 +4,7 @@ import Typography from "@/components/Typography/Typography"
 
 export default function About() {
     return (
-        <Layout withFooter withHeader withNavbar withMenu>
+        <Layout withFooter withHeader withNavbar >
             <div className="flex flex-col items-center justify-center min-h-screen py-2 mx-10">
                 <Typography as="h1" variant="Header" size="7xl" className="mb-4">
                     About Us
