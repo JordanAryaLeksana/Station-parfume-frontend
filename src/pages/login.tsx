@@ -1,7 +1,7 @@
 import { LoginData } from "@/Interface/IAuth";
-import { AuthAtom } from "@/store/auth";
+// import { AuthAtom } from "@/store/auth";
 import { motion } from "framer-motion";
-import { useAtom } from "jotai";
+// import { useAtom } from "jotai";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import z from "zod";
@@ -18,7 +18,7 @@ const validationSchema = z.object({
 });
 
 export default function LoginPage() {
-    const [authState] = useAtom(AuthAtom)
+    // const [authState] = useAtom(AuthAtom)
 
     const methods = useForm<LoginData>({
         defaultValues: {
@@ -30,7 +30,10 @@ export default function LoginPage() {
         reValidateMode: "onChange",
     });
 
-    const onSubmit = (data: LoginData) => {
+    const onSubmit = (
+        // data: LoginData
+
+    ) => {
 
     }
     return (
